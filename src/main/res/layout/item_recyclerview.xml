@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+        android:id="@+id/LineLayout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_check"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="✔ 분류️ :"
+                android:textColor="#595959"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/itemData"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/gray"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+<!--분류 묶는  -->
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="📍할일 :"
+            android:textColor="@color/gray" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+
+            android:id="@+id/itemData2"/>
+</LinearLayout>
+<!--     할일 묶는   -->
+
+    </LinearLayout>
+<!-- 전체를 감싸는 레이아웃 -->
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        android:text="등록일: "/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:id="@+id/itemData3"/>
+</LinearLayout>
+
+
+
+
+
+    <!--      수정삭제버튼  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:text="수정"
+        android:id="@+id/update_btn"
+        android:textSize="10dp"
+        android:visibility="visible"/>
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:text="삭제"
+        android:textSize="10dp"
+        android:id="@+id/del_btn"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
